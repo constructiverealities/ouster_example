@@ -17,5 +17,5 @@
   </group>
 
   <node pkg="ouster_ros" type="os1_node" name="os1_node" output="screen" required="true"/>
-
+  <node pkg="tf" type="static_transform_publisher" name="tf__device_2_os1" args=".1 .15 0 1.57 1.57 0 device os1 50"/>
 </launch>
